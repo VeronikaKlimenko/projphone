@@ -294,6 +294,31 @@
         <div><img src="images/icon_telegram.svg" alt="telegram icon" /></div>
       </div>
     </footer>
-    <footer class="mobile-footer"></footer>
+    <footer class="mobile-footer">
+      <div class="menu">
+        <a href="#new-items">новинки</a>
+        <a href="#about">про нас</a>
+        <a href="#consultation">консультація</a>
+        <a href="#reviews">відгуки</a>
+        <a href="#catalog">каталог</a>
+      </div>
+      <div class="footer-icons">
+        <img src="images/icon_info.svg" alt="Icon 1" />
+        <img src="images/icon_heart.svg" alt="Icon 2" />
+        <a href="javascript:void(0)" class="center-icon" onclick="toggleMenu()">
+          <img src="images/icon_menu.svg" alt="Center Icon" />
+        </a>
+        <img src="images/icon_basket.svg" alt="Icon 3" />
+        <img src="images/icon_user.svg" alt="Icon 4" />
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".mobile-footer .menu");
+        if (menu) {
+          menu.classList.toggle("show");
+        }
+      }
+    </script>
   </body>
 </html>
