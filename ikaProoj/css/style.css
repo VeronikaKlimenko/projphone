@@ -88,7 +88,7 @@ header .div-on-top {
 }
 
 .div-on-top img {
-  margin-left: 20px;
+  margin-left: 5px;
 }
 .icons-container {
   justify-self: end;
@@ -145,7 +145,7 @@ main .full-screen-image {
 }
 
 .scroll-section img {
-  margin: 0 30px;
+  margin: 0 auto;
   vertical-align: middle;
   max-width: 100%;
 }
@@ -213,7 +213,7 @@ main .full-screen-image {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: -180px;
+  margin-bottom: -110px;
 }
 .image-container img {
   width: 500px;
@@ -265,7 +265,6 @@ main .full-screen-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
   position: absolute;
   top: 20px;
   left: 0;
@@ -311,11 +310,12 @@ main .full-screen-image {
   width: 400px;
   background-position: center;
   background-image: url("../images/reviewspot.png");
-  background-size: cover;
+  background-size: 110%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 120px;
 }
 
 .image-container-review {
@@ -626,7 +626,6 @@ main .full-screen-image {
 
   .new-items-container {
     display: grid;
-    gap: 20px;
   }
   .item img {
     max-width: 100%;
@@ -642,9 +641,7 @@ main .full-screen-image {
   }
 
   .image-container img {
-    width: 40%;
-    height: 70%;
-    margin: 150px -30px 80px -30px;
+    display: none;
   }
 
   .image-container {
@@ -653,6 +650,7 @@ main .full-screen-image {
 
   .about-section h1 {
     min-width: 180px;
+    margin-bottom: 20px;
   }
 
   .about-section .text-container {
@@ -666,16 +664,58 @@ main .full-screen-image {
   .mobile-footer {
     display: flex;
   }
+  .reviews-section hr {
+    display: none;
+  }
 
   h1 {
     font-size: 20px;
   }
 
-  .consultation-section h1 {
-    background-size: 70%;
-  }
-
   .pc-footer {
     display: none;
+  }
+  button {
+    font-size: 16px;
+    width: 120px;
+  }
+  .switcher-under-review {
+    background-image: none;
+  }
+
+  .item-in-reviews p {
+    font-size: 12px;
+  }
+  .item-in-reviews.second {
+    display: none;
+  }
+
+  .reviews-section .reviews-container {
+    padding: 40px;
+  }
+  .picture {
+    height: 100px;
+    width: 100px;
+  }
+  .rating {
+    width: 100px;
+  }
+  .reviews-section .item-in-reviews {
+    gap: 5px;
+    flex-direction: column;
+  }
+  input[type="text"] {
+    font-size: 16px;
+  }
+  .send-review textarea {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .consultation-section h1 {
+    background-size: 120%;
+  }
+  .switcher-under-catalog {
+    background-size: cover;
   }
 }
